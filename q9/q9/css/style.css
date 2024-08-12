@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-/* カード内の画像は以下のURLを使用して下さい */
-/* https://picsum.photos/id/1005/200/300 */
 .green-box {
   width: 200px;
   height: 200px;
@@ -10,8 +8,7 @@
 }
 
 .fadein {
-  animation: fadein 4s;
-  animation-fill-mode: both;
+  animation: fadein 4s ease 0s 1 normal;
 }
 @keyframes fadein {
   0% {
@@ -61,10 +58,9 @@
 }
 
 .hover-spin:hover{
-  transition: transform 1s;
   transform: rotate(360deg);
 }
-  .hover-upslide:hover {
+.hover-upslide:hover {
     transform: translate(0, -20%);
 }
 .hover-rightslide:hover {
